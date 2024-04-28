@@ -209,8 +209,8 @@ elif select == "Updation and Deletion on Extracted Data":
             up_pin = st.text_input("PINCODE",df_2["PINCODE"].unique()[0])
             up_ima = st.text_input("IMAGE",df_2["IMAGE"].unique()[0])
 
-            df_2["WEBSITE"] = up_web
-            df_2["ADDRESS"] = up_add
+            df_3["WEBSITE"] = up_web
+            df_3["ADDRESS"] = up_add
             df_3["PINCODE"] = up_pin
             df_3["IMAGE"] = up_ima
 
