@@ -83,11 +83,21 @@ with st.sidebar:
 
 if select =="Home":
     st.sidebar.markdown("# Home")
-    st.title("Extracting Business Card Data with OCR")
-    st.write("BizCardX project is to develope a Streamlit application that allows users to upload an image of a business card and extract relevant information from it using easyOCR.")
-    st.markdown(" ")
-    st.write("Easy OCR is a font-dependent printed character reader based on a template matching algorithm. It has been designed to read any kind of short text (part numbers, serial numbers, expiry dates, manufacturing dates, lot codes...)")
-    st.markdown(" ")
+    st.title("**Extracting Business Card Data with OCR**")
+    col1,col2 = st.columns(2)
+    with col1:
+        st.markdown(" ")
+        st.markdown(" ")
+        st.markdown(" ")
+        st.markdown(" ")
+        st.markdown(" ")
+        st.write("BizCardX project is to develope a Streamlit application that allows users to upload an image of a business card and extract relevant information from it using easyOCR.")
+        st.markdown(" ")
+        st.write("Easy OCR is a font-dependent printed character reader based on a template matching algorithm. It has been designed to read any kind of short text (part numbers, serial numbers, expiry dates, manufacturing dates, lot codes...)")
+    with col2:
+        st.markdown(" ")
+        st.markdown(" ")
+        st.image(icon)
     st.subheader("Technologies Used:")
     st.write("Python")
     st.write("EasyOCR")
